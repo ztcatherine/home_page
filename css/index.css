@@ -133,6 +133,40 @@ h2{
 .brand-bottom{
    height: 60px;
 }
+/* 服务 */
+.server{
+  height: 806px;
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 99px;
+}
+.server-items{
+  height: 100%;
+}
+.server-items-col{
+  height: 100%;
+}
+.server-list{
+  height: 282px;
+ }
+ .server-list img{
+   margin: 0 auto;
+   display: block;
+ }
+ /* 联系我们 */
+ .contact{
+   height: 330px;
+   background-color: #444444;
+   color: #FFFFFF;
+ }
+ .footer{
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   background-color: #333333;
+   color: #FFFFFF;
+   font-size: 12px;
+ }
 .flex{
   display: flex;
   flex-wrap: wrap;
@@ -143,5 +177,165 @@ h2{
 }
 .flex2{
   width: 50%;
+}
+.flex3{
+  width: 25%;
+}
+.Dream_wrapper {
+  width: 100%;
+  height: 668px;
+  background: url("../png/bg1.jpg");
+  background-size: 100% 668px;
+}
+
+.Dream_title {
+  height: 190px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.dream_content_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dream_content {
+  width: 1080px;
+  height: 380px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dream_left {
+  width: 540px;
+  margin-right: 90px;
+  color: #333333;
+}
+
+.left_item1 {
+  height: 80px;
+  margin-bottom: 54px;
+}
+
+.left_item2 {
+  height: 80px;
+  margin-bottom: 54px;
+}
+
+.left_common {
+  width: 540px;
+  background: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  background: #939394;
+}
+
+.left_item3 {
+  height: 110px;
+  margin-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dream_right {
+  width: 448px;
+  height: 231px;
+}
+
+.right_one {
+  display: flex;
+  margin: 10px 0;
+}
+
+.right_title {
+  font-size: 20px;
+  color: #9CC813;
+}
+
+.nihao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_commot {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.right_value {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.agent_wrapper {
+  width: 100%;
+  height: 490px;
+  background: url("../png/bg2.jpg");
+  background-size: 100% 490px;
+}
+
+.agent_title {
+  width: 100%;
+  height: 185px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.agnet_content_wrap {
+  height: 308px;
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.agent_left {
+  font-size: 28px;
+  color: #ffffff;
+  width: 448px;
+  height: 212px;
+  margin-right: 87px;
+}
+
+.agent_right {
+  padding-top: 29px;
+  color: #ffffff
+}
+
+.all_city {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.applay {
+  border: 1px #ffffff solid;
+  color: #9CC813;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.photo_num {
+  color: #9CC813
 }
 
