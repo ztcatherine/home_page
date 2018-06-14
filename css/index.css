@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img{
+  vertical-align: middle;
+
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+.wrap{
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* 轮播图 */
+#carousel-example-generic{
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+/* 赋能 */
+.energize{
+  width: 1080px;
+  height: 661px;
+  /* background-color:yellow; */
+  margin: 0 auto;
+  padding: 99px 0 59px;
+}
+h2{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 59px;
+}
+.energize-gather{
+  width: 100%;
+}
+.energize-item{
+  height: 180px;
+  width: 49% !important;
+}
+.energize-item-one{
+  background-color: #f3fbfe;
+}
+.energize-item-two{
+  background-color: #d6e2b0;
+}
+.energize-item-three{
+  background-color: #374971;
+}
+.energize-item-four{
+  background-color: #d6f2fd;
+}
+.energize-item-right{
+  margin-left: auto
+}
+.energize-list{
+  justify-content: center;
+}
+/* 聚焦 */
+.focalize{
+  height: 894px;
+  width: 100%;
+  margin: 0 auto;
+  background-color:#b5cae8;
+  padding-top: 102px;
+}
+.focalize-bottom{
+  height: 678px;
+  width: 1080px;
+  margin: 0 auto;
+}
+.focalize h2{
+  margin-bottom: 19px !important;
+}
+.focalize-head{
+  text-align: center;
+}
+.line{
+  position: absolute;
+  z-index: 1;
+  top: -170px;
+}
+/* 驱动 */
+.drive{
+  height: 961px;
+  width: 100%;
+  background-color: #ededed;
+  padding: 100px 0;
+}
+.drive-brand{
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+}
+.drive-brand-content{
+  height: 100%;
+  align-content: flex-start !important;
+}
+.drive-brand-left{
+  height: 570px;
+}
+.brand-feature{
+  width: 100%;
+  height: 386px;
+  position: relative;
+  margin-top: 60px;
+}
+.brand-feature-top{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-5%,-76%)
+}
+.brand-feature-bottom{
+  width: 149px;
+  height: 75px;
+  line-height: 75px;
+  justify-content: center;
+  border:1px dashed #30B2E5;
+  border-radius: 20px;
+  color: #004778
+}
+.brand-bottom{
+   height: 60px;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex1{
+  width: 100%;
+}
+.flex2{
+  width: 50%;
+}
+
