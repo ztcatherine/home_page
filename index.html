@@ -16,10 +16,10 @@
   <div class="wrap">
     <!-- 轮播图 -->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <div style="height: 64px;position: absolute;z-index: 1;margin-top: 28px;" class="flex">
-          <img src="png/logo.png" alt="" style="margin: 0 320px 0 420px;">
+      <!-- <div style="height: 64px;position: absolute;z-index: 1;margin: 28px 0 0 420px;" class="flex">
+          <img src="png/logo.png" alt="" style="margin-left: auto;">
           <ul class="navig">
-              <li><a href="" class="navigL">首页</a></li>
+              <li><a href="" class="navigL home_page">首页</a></li>
               <li><a href="" class="navigL">解决方案</a></li>
               <li><a href="" class="navigL">产品与服务</a></li>
               <li><a href="" class="navigL">案例展示</a></li>
@@ -27,7 +27,18 @@
               <li><a href="" class="navigL">关于我们</a></li>
               <li><a href="" class="navigL">申请试用</a></li>
             </ul>
-      </div>
+            
+      </div> -->
+      <img src="png/logo.png" alt="" style="position: absolute;z-index: 1;margin-top: 28px;left: 5%;">
+      <ul class="navig" style="position: absolute;z-index: 1;margin-top: 28px;right: 5%">
+          <li><a href="" class="navigL home_page">首页</a></li>
+          <li><a href="" class="navigL">解决方案</a></li>
+          <li><a href="" class="navigL">产品与服务</a></li>
+          <li><a href="" class="navigL">案例展示</a></li>
+          <li><a href="" class="navigL">招商加盟</a></li>
+          <li><a href="" class="navigL">关于我们</a></li>
+          <li><a href="" class="navigL">申请试用</a></li>
+        </ul>
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -141,7 +152,9 @@
 
     </div> -->
     <div>
-      <img src="png/focalize.jpg" alt="">
+      <img src="png/focalize.jpg" alt="" style="width: 100%;">
+
+      </div>
     </div>
     <!-- 驱动 -->
     <div class="drive">
@@ -288,46 +301,49 @@
 
      <!-- Even -->
      <div class="Dream_wrapper">
-      <div class="Dream_title">
-          <p style="font-family: MicrosoftYaHei;">追寻 团队的梦想</p>
-      </div>
-      <div class="dream_content_wrap">
-          <div class="dream_content">
-              <div class="dream_left">
-                  <div class="left_item1 left_common">
-                      企业愿景： 助力零售企业 赋能未来商业
-                  </div>
-                  <div class="left_item2 left_common">
-                      企业口号： 以速变 创能量
-                  </div>
-                  <div class="left_item3 left_common">
-                      <!--   -->
-                      <div>团队背景：一群来自于IBM、阿里</div>
-                      <div>京东和零售行业的痴心追梦人</div>
-                  </div>
-              </div>
-
-              <div class="dream_right">
-                  <div class="right_one">
-                      <p style="margin: 0;font-family: MicrosoftYaHei-Bold ;font-weight: bold" class="right_title nihao">商素易</p>
-                      <p style="margin: 0" class="right_value nihao"> : 由 "speed(速度)"和字母</p>
-                  </div>
-                  <div class="right_commot">
-                      "E(electronic电子的和 enery能量的
-                  </div>
-                  <div class="right_commot">
-                      首字母E, 代表互联网能量）" 与 "CH
-                  </div>
-                  <div class="right_commot">
-                      (change变化)" 3个英文词组合而成 育
-                  </div>
-                  <div class="right_commot">
-                      意互联网的 "速度" 与 "赋能"
-                  </div>
-              </div>
-
+      <div style="width: 1080px;height: 100%;margin: 0 auto;">
+          <div class="Dream_title">
+              <p style="font-family: MicrosoftYaHei;">追寻 团队的梦想</p>
           </div>
-
+          <div class="dream_content_wrap">
+              <div class="dream_content">
+                  <div class="dream_left">
+                      <div class="left_item1 left_common">
+                          企业愿景： 助力零售企业 赋能未来商业
+                      </div>
+                      <div class="left_item2 left_common">
+                          企业口号： 以速变 创能量
+                      </div>
+                      <div class="left_item3 left_common">
+                          <!--   -->
+                          <div>团队背景：一群来自于IBM、阿里</div>
+                          <div>京东和零售行业的痴心追梦人</div>
+                      </div>
+                  </div>
+    
+                  <div class="dream_right">
+                    <img src="png/introduce.jpg" alt="">
+                      <!-- <div class="right_one">
+                          <p style="margin: 0;font-family: MicrosoftYaHei-Bold ;font-weight: bold" class="right_title nihao">商素易</p>
+                          <p style="margin: 0" class="right_value nihao"> : 由 "speed(速度)"和字母</p>
+                      </div>
+                      <div class="right_commot">
+                          "E(electronic电子的和 enery能量的
+                      </div>
+                      <div class="right_commot">
+                          首字母E, 代表互联网能量）" 与 "CH
+                      </div>
+                      <div class="right_commot">
+                          (change变化)" 3个英文词组合而成 育
+                      </div>
+                      <div class="right_commot">
+                          意互联网的 "速度" 与 "赋能"
+                      </div> -->
+                  </div>
+    
+              </div>
+    
+          </div>
       </div>
   </div>
 
@@ -411,6 +427,19 @@
     win.addEventListener(resizeEvt, recalc, false)
     doc.addEventListener('DOMContentLoaded', recalc, false)
   })(document, window)
+var css = {
+    color: "#043B8A",
+    'border-bottom': "1px solid #043B8A"
+  }
+  $('.home_page').css(css)
+  $('.navig').children()
+  let a = [].slice.call($('.navig').children('li'))
+  console.log(a)
+  a.forEach(element => {
+    element.onmouseover=function(ev){
+      $('.home_page').removeAttr("style");
+    }
+  });
 </script>
 
 </html>

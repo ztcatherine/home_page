@@ -36,7 +36,8 @@ li{
   display: flex;
   justify-content:space-between;
   color: #FFFFFF;
-  position: relative;
+  /* position: relative;
+  margin-left: 320px; */
 }
 .navig li{
   height: 100%;
@@ -281,7 +282,6 @@ h2{
 
 .dream_left {
   width: 540px;
-  margin-right: 90px;
   color: #333333;
 }
 
@@ -316,6 +316,7 @@ h2{
 .dream_right {
   width: 448px;
   height: 231px;
+  margin-left: 73px;
 }
 
 .right_one {
