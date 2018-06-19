@@ -59,8 +59,11 @@ li {
   display: block;
   text-decoration: none;
 }
-
-.navig li::before {
+.home_page{
+  color: #043B8A !important;
+  border-bottom: 1px solid #043B8A
+}
+/* .navig li::before {
   content: '';
   position: absolute;
   top: 0;
@@ -78,7 +81,7 @@ li {
 
 li:hover~li::before {
   left: 0;
-}
+} */
 
 /* 赋能 */
 
@@ -137,6 +140,11 @@ h2 {
   text-align: center;
 }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+  color: #d0d0d0; 
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  }
 /* 驱动 */
 
 .drive {
@@ -363,19 +371,19 @@ h2 {
   color: #ffffff;
   width: 448px;
   height: 212px;
-  margin-right: 87px;
+  margin-right: 94px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
 }
 
 .agent_right {
-  padding-top: 29px;
+  padding-top: 40px;
   color: #ffffff
 }
 
 .all_city {
-  margin-bottom: 40px;
+  margin-bottom: 68px;
   font-size: 40px;
 }
 
@@ -398,11 +406,14 @@ h2 {
 .photo {
   width: 346px;
   height: 29px;
-  margin-top: 30px;
   flex-direction: row;
 }
 
 .photo_num {
   color: #9CC813;
   font-size: 32px;
+}
+.footer a{
+  text-decoration: none;
+  color: #FFFFFF
 }

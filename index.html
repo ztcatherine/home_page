@@ -14,29 +14,29 @@
 <body>
   <div class="wrap">
     <!-- 轮播图 -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 780px;">
       <img src="png/logo.png" alt="" style="position: absolute;z-index: 1;margin-top: 28px;left: 5%;">
       <ul class="navig" style="position: absolute;z-index: 1;margin-top: 60px;right: 5%" id="navigator">
         <li>
           <a href="#" class="navigL home_page">首页</a>
         </li>
         <li>
-          <a href="#" class="navigL">解决方案</a>
+          <a href="#solution" class="navigL">解决方案</a>
         </li>
         <li>
-          <a href="#" class="navigL">产品与服务</a>
+          <a href="#productAndService" class="navigL">产品与服务</a>
         </li>
         <li>
-          <a href="#" class="navigL">案例展示</a>
+          <a href="#productAndService" class="navigL">案例展示</a>
         </li>
         <li>
-          <a href="#" class="navigL">招商加盟</a>
+          <a href="#investment" class="navigL">招商加盟</a>
         </li>
         <li>
-          <a href="#" class="navigL">关于我们</a>
+          <a href="#AboutUs" class="navigL">关于我们</a>
         </li>
         <li>
-          <a href="#" class="navigL">申请试用</a>
+          <a href="#myModal" class="navigL" data-toggle="modal">申请试用</a>
         </li>
       </ul>
       <!-- Indicators -->
@@ -47,21 +47,21 @@
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox" style="height: 780px;">
         <div class="item active">
-          <img src="png/banner.jpg" alt="...">
+         <img src="png/banner.jpg" alt="..." style="height: 780px;">
           <div class="carousel-caption">
 
           </div>
         </div>
         <div class="item">
-          <img src="png/banner2.jpg" alt="...">
+          <img src="png/banner2.jpg" alt="..." style="height: 780px;">
           <div class="carousel-caption">
 
           </div>
         </div>
         <div class="item">
-          <img src="png/banner3.jpg" alt="...">
+          <img src="png/banner3.jpg" alt="..." style="height: 780px;">
           <div class="carousel-caption">
 
           </div>
@@ -70,7 +70,7 @@
     </div>
 
     <!-- 赋能 -->
-    <div class="energize flex">
+    <div class="energize flex" id="solution">
 
       <div class="energize-gather">
         <img src="png/energize.jpg" alt="" style="width: 1080px;height: 100%;">
@@ -78,13 +78,12 @@
       <div class="application">
         <img src="png/icon_sqsy.png" alt="" style="display:block;margin: 0 auto;width: 47px;height: 47px;">
         <div class="use" style="width: 28px; margin: 0 auto">
-          <a href="" style="display:block;height: 100%;text-decoration: none;color: white;">申请使用</a>
+          <a href="#" style="display:block;height: 100%;text-decoration: none;color: white;" data-toggle="modal" data-target="#myModal">申请使用</a>
         </div>
       </div>
     </div>
-
-    <!-- 聚焦 -->
-    <div class="focalize">
+     <!-- 聚焦 -->
+    <div class="focalize" id="productAndService">
       <div style="width: 1080px;margin: 0 auto ; ">
         <h2>聚焦 多场景消费体验</h2>
         <div class="focalize-head">消费者以微信和小程序为入口介入品牌商户或门店提供的线上线下整体服务,参与活动,享受权益,完成消费。</div>
@@ -164,7 +163,7 @@
     </div>
 
     <!-- 梦想 -->
-    <div class="Dream_wrapper">
+    <div class="Dream_wrapper" id="AboutUs">
       <div style="width: 1080px;height: 100%;margin: 0 auto;">
         <div class="Dream_title">
           <p style="font-family: MicrosoftYaHei;">追寻 团队的梦想</p>
@@ -197,7 +196,7 @@
     </div>
 
     <!-- 182 -->
-    <div class="agent_wrapper">
+    <div class="agent_wrapper" id="investment">
       <div class="agent_title">
         城市合伙人招募
       </div>
@@ -212,9 +211,6 @@
         <div class="agent_right">
           <div class="all_city">
             全国城市合作伙伴诚邀中........
-          </div>
-          <div class="applay">
-            <a href="">立即申请 >></a>
           </div>
           <div class="photo flex">
             <div style="font-size: 24px;">诚邀热线：</div>
@@ -248,16 +244,44 @@
     </div>
 
     <div class="footer">
-      上海寻点信息科技有限公司All rights reserved. 沪ICP备
+      <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action">上海寻点信息科技有限公司All rights reserved. 沪ICP备18015452号-1</a>
     </div>
   </div>
 
-
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="width: 480px;height: 500px;margin: 240px 0 0 720px;">
+          <form id="mainForm" action="/store/apply/postApply.do" class="modal-content jsrz_main_information" style="width: 480px;height: 500px;padding: 50px 40px 60px;"  method="post" enctype="multipart/form-data">
+            <div style="margin-bottom: 60px">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel" style="font-family: MicrosoftYaHei;font-size: 28px; color: #333333;text-align: center">申请体验账号</h4>
+            </div>
+            <div>
+              <div style="margin-bottom: 20px;height: 56px;padding: 14px 0 14px 20px;width: 100%;border: 1px solid;border-radius: 30px">
+                  <img src="png/icon_name.png" alt="" style="margin-right: 10px">
+                  <input type="text" name=" contactor" style="border: 0px;outline:none;width: 300px;" placeholder="请填写您的真实姓名或昵称">
+              </div>
+              <div style="margin-bottom: 20px;height: 56px;padding: 14px 0 14px 20px;width: 100%;border: 1px solid;border-radius: 30px">
+                  <img src="png/icon_phone.png" alt="" style="margin-right: 10px">
+                  <input type="tel" name="tel" style="border: 0px;outline:none;width: 300px;" placeholder="请输入您的手机号码">
+              </div>
+              <div style="margin-bottom: 40px;height: 56px;padding: 14px 0 14px 20px;width: 100%;border: 1px solid;border-radius: 30px">
+                  <img src="png/icon_storename.png" alt="" style="margin-right: 10px">
+                  <input type="text" name="company" style="border: 0px;outline:none;width: 300px;" placeholder="请输入门店名称">
+              </div>
+            </div>
+            <div class="jsrz_main_button">
+              <input type="submit" name="memo" value="确定" id="agreementSub"  style="width: 100%;height: 56px;" class="btn btn-primary">  
+            </div>
+          </form>
+        </div>
+      </div>
 
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script>
+
   (function (doc, win) {
     let designWidth = 1080 // 设计图宽度
     let docEl = doc.documentElement
@@ -271,19 +295,13 @@
     win.addEventListener(resizeEvt, recalc, false)
     doc.addEventListener('DOMContentLoaded', recalc, false)
   })(document, window)
-  var css = {
-    color: "#043B8A",
-    'border-bottom': "1px solid #043B8A"
-  }
-  $('.home_page').css(css)
-  $('.navig').children()
-  let a = [].slice.call($('.navig').children('li'))
-  console.log(a)
-  a.forEach(element => {
-    element.onmouseover = function (ev) {
-      $('.home_page').removeAttr("style");
-    }
+
+// 表单
+$("#agreementSub").click(function(){
+  $.post("/store/apply/postApply.do",{},function(data,status){
+     
   });
+});
 </script>
 
 </html>
