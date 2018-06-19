@@ -7,6 +7,7 @@
   <title>首页</title>
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.bootcss.com/bootstrap-validator/0.4.2/css/bootstrapValidator.css" rel="stylesheet">
   <style>
   </style>
 </head>
@@ -35,9 +36,9 @@
         <li>
           <a href="#AboutUs" class="navigL">关于我们</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#myModal" class="navigL" data-toggle="modal">申请试用</a>
-        </li>
+        </li> -->
       </ul>
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -75,12 +76,12 @@
       <div class="energize-gather">
         <img src="png/energize.jpg" alt="" style="width: 1080px;height: 100%;">
       </div>
-      <div class="application">
+      <!-- <div class="application">
         <img src="png/icon_sqsy.png" alt="" style="display:block;margin: 0 auto;width: 47px;height: 47px;">
         <div class="use" style="width: 28px; margin: 0 auto">
           <a href="#" style="display:block;height: 100%;text-decoration: none;color: white;" data-toggle="modal" data-target="#myModal">申请使用</a>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- 聚焦 -->
     <div class="focalize" id="productAndService">
@@ -249,7 +250,7 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document" style="width: 480px;height: 500px;margin: 240px 0 0 720px;">
       <form id="applyForm" class="modal-content jsrz_main_information" style="width: 480px;height: 500px;padding: 50px 40px 60px;"
         method="post" enctype="multipart/form-data">
@@ -260,13 +261,13 @@
           <h4 class="modal-title" id="myModalLabel" style="font-family: MicrosoftYaHei;font-size: 28px; color: #333333;text-align: center">申请体验账号</h4>
         </div>
         <div>
-          <div style="margin-bottom: 20px;height: 56px;padding: 14px 0 14px 20px;width: 100%;border: 1px solid #d0d0d0;border-radius: 30px">
+          <div id="phone_div" style="margin-bottom: 20px;height: 56px;padding: 14px 0 14px 20px;width: 100%;border: 1px solid #d0d0d0;border-radius: 30px">
             <img src="png/icon_name.png" alt="" style="margin-right: 10px">
             <input type="text" name="contactor" style="border: 0px;outline:none;width: 300px;" placeholder="请填写您的真实姓名或昵称">
           </div>
           <div style="margin-bottom: 20px;height: 56px;padding: 14px 0 14px 20px;width: 100%;border: 1px solid #d0d0d0;border-radius: 30px">
             <img src="png/icon_phone.png" alt="" style="margin-right: 10px">
-            <input type="tel" name="tel" style="border: 0px;outline:none;width: 300px;" placeholder="请输入您的手机号码">
+            <input type="tel" name="tel" id="phone_number" style="border: 0px;outline:none;width: 300px;" placeholder="请输入您的手机号码">
           </div>
           <div style="margin-bottom: 40px;height: 56px;padding: 14px 0 14px 20px;width: 100%;border: 1px solid #d0d0d0;border-radius: 30px">
             <img src="png/icon_storename.png" alt="" style="margin-right: 10px">
@@ -282,19 +283,20 @@
 
 
   <div id="applyForm_success">
-     <div style="width: 130px;height: 130px;margin: 0 auto">
-       <img src="png/icon_complete.png" alt="">
-     </div>
-     <div class="applyForm_success_head">申请已提交成功</div>
-     <div class="applyForm_success_center">我们将第一时间联系您</div>
-     <div class="applyForm_success_footer">
-        <div class="btn btn-primary" id="applyForm_success_btn">确定</div>
-     </div>
-  </div>
+    <div style="width: 130px;height: 130px;margin: 0 auto">
+      <img src="png/icon_complete.png" alt="">
+    </div>
+    <div class="applyForm_success_head">申请已提交成功</div>
+    <div class="applyForm_success_center">我们将第一时间联系您</div>
+    <div class="applyForm_success_footer">
+      <div class="btn btn-primary" id="applyForm_success_btn">确定</div>
+    </div>
+  </div> -->
 
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap-validator/0.4.2/js/bootstrapValidator.js"></script>
 <script>
   (function (doc, win) {
     let designWidth = 1080 // 设计图宽度
@@ -310,19 +312,47 @@
     doc.addEventListener('DOMContentLoaded', recalc, false)
   })(document, window)
 
-  // 表单
-  $("#applyForm_success").hide();
-  $("#agreementSub").click(function () {
-    debugger;
-    $.post("/store/apply/postApply.do",$("#applyForm").serialize(), function (data, status) {
-       
+// $(function(){
+
+//   $("#applyForm_success").hide();
+//   $("#agreementSub").click(function () {
+//     var phone_number = $("#phone_number").val();
+    
+//     if($.trim(phone_number)==""){
+//       $("#phone_div").tooltip({
+//         placement:'bottom',
+//         title:'请输入手机号'
+//       });
+//       $("#phone_div").tooltip('show');
+
+     
+//       return;
+//     }
+//     var reg = /^((0\d{2,3}-\d{7,8})|(1[34578]\d{9}))$/; //校验手机号和固定电话
+//     if (!reg.test(phone_number)) {
+//       $("#phone_div").css("border-color","red");
+//       $("#phone_number").attr("placeholder","请输入正确的手机号");
+//       return;
+//     } 
+   
+
+    
+           
+      
+
+
+    $.post("/store/apply/postApply.do", $("#applyForm").serialize(), function (data, status) {
+      $('#myModal').modal('hide')
+      $("#applyForm_success").show();
     });
-    $('#myModal').modal('hide')
-    $("#applyForm_success").show();
+   
   });
-  $("#applyForm_success_btn").click(function(){
+  $("#applyForm_success_btn").click(function () {
     $("#applyForm_success").hide()
   })
+});
+  // 表单
+  
 </script>
 
 </html>
